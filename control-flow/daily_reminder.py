@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 #python script related to the ALX SE program
 
-Task = input('Enter your task: ')
-Priority = input('Priority (high/medium/low): ')
-TimeBount = input('Is is time-bound? (yes/no): ')
+task = input('Enter your task: ')
+priority = input('Priority (high/medium/low): ')
+time_bound = input('Is is time-bound? (yes/no): ')
 
-if timeBount == 'yes':
+if time-bound == 'yes':
     match priority:
         case 'high':
             print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today")
