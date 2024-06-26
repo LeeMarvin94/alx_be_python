@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 #python script related to the ALX SE program
 
-task = input('Enter your task: ')
-priority = input('Priority (high/medium/low): ')
-timeBount = input('Is is time-bound? (yes/no): ')
+Task = input('Enter your task: ')
+Priority = input('Priority (high/medium/low): ')
+TimeBount = input('Is is time-bound? (yes/no): ')
 
 if timeBount == 'yes':
     match priority:
