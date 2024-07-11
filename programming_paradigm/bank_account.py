@@ -13,7 +13,7 @@ class BankAccount:
     #method's definition
     def withdraw(self, amount):
         if self.account_balance >= amount:
-            account_balance -= amount
+            self.account_balance -= amount
             return True
         else:
             return False
