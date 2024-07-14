@@ -14,7 +14,7 @@ def safe_divide(numerator, denominator):
         return "Error: Cannot divide by zero."
         
     except ValueError:
-        return "Error: Both inputs must be numeric values."
+        return "Error: Please enter numeric values only."
 
 # Example usage (comment out before using in main.py):
 # if __name__ == "__main__":
