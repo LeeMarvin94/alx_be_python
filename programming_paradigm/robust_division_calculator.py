@@ -8,7 +8,8 @@ def safe_divide(numerator, denominator):
         
         # Perform division and handle ZeroDivisionError
         result = num / den
-        return f"The result of {num} divided by {den} is {result}."
+        # The result of the division is 6.0
+        return f"The result of the division is {result}"
         
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
