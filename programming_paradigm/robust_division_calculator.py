@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 # robust_division_calculator.py
 
 def safe_divide(numerator, denominator):
@@ -12,7 +11,7 @@ def safe_divide(numerator, denominator):
         return f"The result of {num} divided by {den} is {result}."
         
     except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+        return "Error: Cannot divide by zero."
         
     except ValueError:
         return "Error: Both inputs must be numeric values."
@@ -22,5 +21,4 @@ def safe_divide(numerator, denominator):
 #     print(safe_divide(10, 2))
 #     print(safe_divide(10, 0))
 #     print(safe_divide('a', 2))
-
 
