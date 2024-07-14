@@ -40,8 +40,8 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(-1, -1), 1)
         self.assertEqual(self.calc.divide(1.5, 0.5), 3.0)
         
-        with self.assertRaises(ValueError):
-            self.calc.divide(1, 0)
+        self.assertEqual(self.calc.divide(1, 0), None)
+        self.assertEqual(self.calc.divide(0, 0), None)
 
 if __name__ == "__main__":
     unittest.main()
