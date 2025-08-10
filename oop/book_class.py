@@ -1,25 +1,23 @@
 # book_class.py
 
 class Book:
+    """A simple Book model with magic methods for initialization, representation, and deletion."""
 
-    def __init__(self, title: str, author: str, year: int) -> None:
+    def __init__(self, title, author, year):
+        """Initialize a Book with title, author, and publication year."""
         self.title = title
         self.author = author
-        self.year = int(year)
+        self.year = year
 
-    def __str__(self) -> str:
+    def __str__(self):
+        """Return a human-readable string for the book."""
         return f"{self.title} by {self.author}, published in {self.year}"
 
-    def __repr__(self) -> str:
-        # Using !r ensures proper quoting/escaping for strings while matching the expected format.
-        return f"Book({self.title!r}, {self.author!r}, {self.year})"
+    def __repr__(self):
+        """Return an official string representation of the book."""
+        return f"Book('{self.title}', '{self.author}', {self.year})"
 
     def __del__(self):
-        """Destructor that announces when a Book is being deleted."""
-        # flush=True helps ensure the message appears promptly before interpreter shutdown.
-        try:
-            print(f"Deleting {self.title}", flush=True)
-        except Exception:
-            # Be silent if stdout is unavailable during interpreter teardown.
-            pass
+        """Destructor that announces deletion."""
+        print(f"Deleting {self.title}")
 
